@@ -6,7 +6,7 @@ Install the required dependencies (Ubuntu/Debian)
 
     sudo apt-get install libssl-dev openssl python3-pip
 
-On Ubuntu make sure you install the pip3 package
+Install the pip dependencies
 
     pip3 install pymongo ethereum eth-utils
 
