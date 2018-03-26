@@ -57,6 +57,8 @@ Poll questions need to be manually loaded at the moment, to create a poll use th
 
 ## Wallet setup
 
-Download the relavent wallet csv file from here [https://github.com/eosdac/airdrop](https://github.com/eosdac/airdrop)
+Download the relevant wallet csv file from here [https://github.com/eosdac/airdrop](https://github.com/eosdac/airdrop) and name it wallet.csv
+
+PLEASE NOTE : The wallet file must be later than snapshot 275
 
 Place it in the same folder as server.py, then run the server and load the /setup page.  This will load all of the token balances into the database

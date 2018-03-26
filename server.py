@@ -14,7 +14,7 @@ import json
 
 SERVER_LISTEN = '' # blank for all interfaces
 MONGO_CONNECTION = 'mongodb://localhost:27017/'
-WALLET_FILE = 'wallet_export_267.csv'
+WALLET_FILE = 'wallet.csv'
 DB_NAME = 'fearful'
 
 
@@ -99,7 +99,7 @@ class FearfulHandler(BaseHTTPRequestHandler):
             reader = csv.reader(f, delimiter=",")
             for i, line in enumerate(reader):
                 requests.append(
-                    InsertOne({"address":line[0].lower(), "balance":int(line[1].replace('.', ''))})
+                    InsertOne({"address":line[0].lower(), "balance":int(line[2].replace('.', ''))})
                 )
         try:
             collection.bulk_write(requests)
