@@ -2,11 +2,9 @@
 
 ## Dependencies
 
-Install python >3.5 and pip
+Install the required dependencies (Ubuntu/Debian)
 
-Make sure you have got libssl-dev and openssl
-
-    sudo apt-get install libssl-dev openssl
+    sudo apt-get install libssl-dev openssl python3-pip
 
 On Ubuntu make sure you install the pip3 package
 
